@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD015B071BFB7DB90003EB36 /* nikn_default_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = AD015B061BFB7DB90003EB36 /* nikn_default_banner.png */; };
+		AD015B091BFB89A50003EB36 /* News-25.png in Resources */ = {isa = PBXBuildFile; fileRef = AD015B081BFB89A50003EB36 /* News-25.png */; };
+		AD015B0B1BFB8A1D0003EB36 /* Waypoint Map-25.png in Resources */ = {isa = PBXBuildFile; fileRef = AD015B0A1BFB8A1D0003EB36 /* Waypoint Map-25.png */; };
+		AD015B0D1BFB8A300003EB36 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = AD015B0C1BFB8A300003EB36 /* Calendar-25.png */; };
+		AD015B0F1BFB8E0C0003EB36 /* AsyncUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B0E1BFB8E0C0003EB36 /* AsyncUpdate.swift */; };
+		AD015B141BFB907C0003EB36 /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B131BFB907C0003EB36 /* EventsController.swift */; };
+		AD015B181BFB91040003EB36 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B171BFB91040003EB36 /* EventsViewController.swift */; };
+		AD015B1A1BFB91AF0003EB36 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B191BFB91AF0003EB36 /* NewsController.swift */; };
+		AD015B1C1BFB91D40003EB36 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B1B1BFB91D40003EB36 /* NewsViewController.swift */; };
+		AD015B201BFB93530003EB36 /* EventsConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B1F1BFB93530003EB36 /* EventsConnection.swift */; };
+		AD015B221BFB936F0003EB36 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B211BFB936F0003EB36 /* Event.swift */; };
 		AD25813C1BF5860A00EEAFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */; };
-		AD25813E1BF5860A00EEAFE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25813D1BF5860A00EEAFE7 /* ViewController.swift */; };
 		AD2581411BF5860A00EEAFE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25813F1BF5860A00EEAFE7 /* Main.storyboard */; };
 		AD2581431BF5860A00EEAFE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2581421BF5860A00EEAFE7 /* Assets.xcassets */; };
 		AD2581461BF5860A00EEAFE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2581441BF5860A00EEAFE7 /* LaunchScreen.storyboard */; };
 		AD2581511BF5860B00EEAFE7 /* Nikin_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2581501BF5860B00EEAFE7 /* Nikin_AppTests.swift */; };
 		AD25815C1BF5860B00EEAFE7 /* Nikin_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25815B1BF5860B00EEAFE7 /* Nikin_AppUITests.swift */; };
+		AD25816D1BF5866100EEAFE7 /* NewsPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25816C1BF5866100EEAFE7 /* NewsPost.swift */; };
+		AD25816F1BF5866E00EEAFE7 /* CareUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25816E1BF5866E00EEAFE7 /* CareUnit.swift */; };
+		AD2581711BF586B100EEAFE7 /* CareUnitMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */; };
+		AD25817B1BF587B800EEAFE7 /* NewsPostConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25817A1BF587B800EEAFE7 /* NewsPostConnection.swift */; };
+		AD25817D1BF587C900EEAFE7 /* CareUnitConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25817C1BF587C900EEAFE7 /* CareUnitConnection.swift */; };
+		AD25817F1BF58A5C00EEAFE7 /* EventsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25817E1BF58A5C00EEAFE7 /* EventsDetail.swift */; };
+		AD2581811BF58A8200EEAFE7 /* NewsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2581801BF58A8200EEAFE7 /* NewsDetail.swift */; };
+		AD2581831BF592F400EEAFE7 /* CareUnitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */; };
+		AD2581851BF5930C00EEAFE7 /* CareUnitMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */; };
+		B64613B6125A368310F22C7D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83039A4EF5E0DBD624E68DA /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +54,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		168C3DD418021B01F4AE302F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AD015B061BFB7DB90003EB36 /* nikn_default_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nikn_default_banner.png; sourceTree = "<group>"; };
+		AD015B081BFB89A50003EB36 /* News-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News-25.png"; sourceTree = "<group>"; };
+		AD015B0A1BFB8A1D0003EB36 /* Waypoint Map-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Waypoint Map-25.png"; sourceTree = "<group>"; };
+		AD015B0C1BFB8A300003EB36 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
+		AD015B0E1BFB8E0C0003EB36 /* AsyncUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncUpdate.swift; sourceTree = "<group>"; };
+		AD015B131BFB907C0003EB36 /* EventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
+		AD015B171BFB91040003EB36 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		AD015B191BFB91AF0003EB36 /* NewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		AD015B1B1BFB91D40003EB36 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		AD015B1F1BFB93530003EB36 /* EventsConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsConnection.swift; sourceTree = "<group>"; };
+		AD015B211BFB936F0003EB36 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		AD2581381BF5860A00EEAFE7 /* Nikin_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nikin_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD25813D1BF5860A00EEAFE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD2581401BF5860A00EEAFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD2581421BF5860A00EEAFE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD2581451BF5860A00EEAFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +78,17 @@
 		AD2581571BF5860B00EEAFE7 /* Nikin_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nikin_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD25815B1BF5860B00EEAFE7 /* Nikin_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nikin_AppUITests.swift; sourceTree = "<group>"; };
 		AD25815D1BF5860B00EEAFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD25816C1BF5866100EEAFE7 /* NewsPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPost.swift; sourceTree = "<group>"; };
+		AD25816E1BF5866E00EEAFE7 /* CareUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareUnit.swift; sourceTree = "<group>"; };
+		AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareUnitMapVC.swift; sourceTree = "<group>"; };
+		AD25817A1BF587B800EEAFE7 /* NewsPostConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostConnection.swift; sourceTree = "<group>"; };
+		AD25817C1BF587C900EEAFE7 /* CareUnitConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareUnitConnection.swift; sourceTree = "<group>"; };
+		AD25817E1BF58A5C00EEAFE7 /* EventsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetail.swift; sourceTree = "<group>"; };
+		AD2581801BF58A8200EEAFE7 /* NewsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetail.swift; sourceTree = "<group>"; };
+		AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareUnitList.storyboard; sourceTree = "<group>"; };
+		AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareUnitMap.storyboard; sourceTree = "<group>"; };
+		AE21A2004621E98CC214BCD5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E83039A4EF5E0DBD624E68DA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64613B6125A368310F22C7D /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +117,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86CEFA7FD9D26E7427011D86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E83039A4EF5E0DBD624E68DA /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD015B051BFB7D8D0003EB36 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AD015B0C1BFB8A300003EB36 /* Calendar-25.png */,
+				AD015B0A1BFB8A1D0003EB36 /* Waypoint Map-25.png */,
+				AD015B081BFB89A50003EB36 /* News-25.png */,
+				AD015B061BFB7DB90003EB36 /* nikn_default_banner.png */,
+				AD015B0E1BFB8E0C0003EB36 /* AsyncUpdate.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		AD015B101BFB8FFC0003EB36 /* CareUnit */ = {
+			isa = PBXGroup;
+			children = (
+				AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */,
+			);
+			name = CareUnit;
+			sourceTree = "<group>";
+		};
+		AD015B111BFB90020003EB36 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				AD2581801BF58A8200EEAFE7 /* NewsDetail.swift */,
+				AD015B191BFB91AF0003EB36 /* NewsController.swift */,
+				AD015B1B1BFB91D40003EB36 /* NewsViewController.swift */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		AD015B121BFB900B0003EB36 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				AD25817E1BF58A5C00EEAFE7 /* EventsDetail.swift */,
+				AD015B131BFB907C0003EB36 /* EventsController.swift */,
+				AD015B171BFB91040003EB36 /* EventsViewController.swift */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
 		AD25812F1BF5860A00EEAFE7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +172,8 @@
 				AD25814F1BF5860B00EEAFE7 /* Nikin_AppTests */,
 				AD25815A1BF5860B00EEAFE7 /* Nikin_AppUITests */,
 				AD2581391BF5860A00EEAFE7 /* Products */,
+				C4BA72B93502613430650969 /* Pods */,
+				86CEFA7FD9D26E7427011D86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +190,11 @@
 		AD25813A1BF5860A00EEAFE7 /* Nikin_App */ = {
 			isa = PBXGroup;
 			children = (
+				AD25816B1BF5863A00EEAFE7 /* Controller */,
+				AD2581691BF5862900EEAFE7 /* Model */,
+				AD015B051BFB7D8D0003EB36 /* Source */,
+				AD25816A1BF5863100EEAFE7 /* View */,
 				AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */,
-				AD25813D1BF5860A00EEAFE7 /* ViewController.swift */,
-				AD25813F1BF5860A00EEAFE7 /* Main.storyboard */,
 				AD2581421BF5860A00EEAFE7 /* Assets.xcassets */,
 				AD2581441BF5860A00EEAFE7 /* LaunchScreen.storyboard */,
 				AD2581471BF5860A00EEAFE7 /* Info.plist */,
@@ -125,6 +220,56 @@
 			path = Nikin_AppUITests;
 			sourceTree = "<group>";
 		};
+		AD2581691BF5862900EEAFE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD2581791BF5879400EEAFE7 /* Connections */,
+				AD25816C1BF5866100EEAFE7 /* NewsPost.swift */,
+				AD25816E1BF5866E00EEAFE7 /* CareUnit.swift */,
+				AD015B211BFB936F0003EB36 /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AD25816A1BF5863100EEAFE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD25813F1BF5860A00EEAFE7 /* Main.storyboard */,
+				AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */,
+				AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AD25816B1BF5863A00EEAFE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD015B121BFB900B0003EB36 /* Events */,
+				AD015B111BFB90020003EB36 /* News */,
+				AD015B101BFB8FFC0003EB36 /* CareUnit */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AD2581791BF5879400EEAFE7 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				AD25817A1BF587B800EEAFE7 /* NewsPostConnection.swift */,
+				AD25817C1BF587C900EEAFE7 /* CareUnitConnection.swift */,
+				AD015B1F1BFB93530003EB36 /* EventsConnection.swift */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		C4BA72B93502613430650969 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE21A2004621E98CC214BCD5 /* Pods.debug.xcconfig */,
+				168C3DD418021B01F4AE302F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD2581601BF5860B00EEAFE7 /* Build configuration list for PBXNativeTarget "Nikin_App" */;
 			buildPhases = (
+				5CDD0979C2BA8D3C4406CAF4 /* Check Pods Manifest.lock */,
 				AD2581341BF5860A00EEAFE7 /* Sources */,
 				AD2581351BF5860A00EEAFE7 /* Frameworks */,
 				AD2581361BF5860A00EEAFE7 /* Resources */,
+				86063E56E42BA84FBF3B06AF /* Embed Pods Frameworks */,
+				AA2876267BC4F3AF74A58CD1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,8 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2581461BF5860A00EEAFE7 /* LaunchScreen.storyboard in Resources */,
+				AD2581831BF592F400EEAFE7 /* CareUnitList.storyboard in Resources */,
 				AD2581431BF5860A00EEAFE7 /* Assets.xcassets in Resources */,
+				AD015B0B1BFB8A1D0003EB36 /* Waypoint Map-25.png in Resources */,
+				AD015B0D1BFB8A300003EB36 /* Calendar-25.png in Resources */,
+				AD015B091BFB89A50003EB36 /* News-25.png in Resources */,
 				AD2581411BF5860A00EEAFE7 /* Main.storyboard in Resources */,
+				AD2581851BF5930C00EEAFE7 /* CareUnitMap.storyboard in Resources */,
+				AD015B071BFB7DB90003EB36 /* nikn_default_banner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +405,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CDD0979C2BA8D3C4406CAF4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86063E56E42BA84FBF3B06AF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA2876267BC4F3AF74A58CD1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD2581341BF5860A00EEAFE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD25813E1BF5860A00EEAFE7 /* ViewController.swift in Sources */,
+				AD25816F1BF5866E00EEAFE7 /* CareUnit.swift in Sources */,
+				AD015B141BFB907C0003EB36 /* EventsController.swift in Sources */,
+				AD015B1C1BFB91D40003EB36 /* NewsViewController.swift in Sources */,
 				AD25813C1BF5860A00EEAFE7 /* AppDelegate.swift in Sources */,
+				AD015B221BFB936F0003EB36 /* Event.swift in Sources */,
+				AD25817F1BF58A5C00EEAFE7 /* EventsDetail.swift in Sources */,
+				AD015B201BFB93530003EB36 /* EventsConnection.swift in Sources */,
+				AD25816D1BF5866100EEAFE7 /* NewsPost.swift in Sources */,
+				AD25817D1BF587C900EEAFE7 /* CareUnitConnection.swift in Sources */,
+				AD25817B1BF587B800EEAFE7 /* NewsPostConnection.swift in Sources */,
+				AD015B0F1BFB8E0C0003EB36 /* AsyncUpdate.swift in Sources */,
+				AD015B1A1BFB91AF0003EB36 /* NewsController.swift in Sources */,
+				AD015B181BFB91040003EB36 /* EventsViewController.swift in Sources */,
+				AD2581811BF58A8200EEAFE7 /* NewsDetail.swift in Sources */,
+				AD2581711BF586B100EEAFE7 /* CareUnitMapVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +610,7 @@
 		};
 		AD2581611BF5860B00EEAFE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE21A2004621E98CC214BCD5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nikin_App/Info.plist;
@@ -406,6 +622,7 @@
 		};
 		AD2581621BF5860B00EEAFE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168C3DD418021B01F4AE302F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Nikin_App/Info.plist;
@@ -482,6 +699,7 @@
 				AD2581621BF5860B00EEAFE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD2581631BF5860B00EEAFE7 /* Build configuration list for PBXNativeTarget "Nikin_AppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +708,7 @@
 				AD2581651BF5860B00EEAFE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD2581661BF5860B00EEAFE7 /* Build configuration list for PBXNativeTarget "Nikin_AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +717,7 @@
 				AD2581681BF5860B00EEAFE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
