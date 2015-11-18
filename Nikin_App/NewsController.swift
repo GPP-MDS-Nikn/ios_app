@@ -8,18 +8,8 @@
 
 import UIKit
 
-class NewsController: NSObject, UITableViewDataSource, AsyncUpdate {
+class NewsController: NSObject{
 
-    func loadData() {
-        <#code#>
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
+  
     
 }

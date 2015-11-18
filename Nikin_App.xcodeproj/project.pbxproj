@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD015B071BFB7DB90003EB36 /* nikn_default_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = AD015B061BFB7DB90003EB36 /* nikn_default_banner.png */; };
-		AD015B091BFB89A50003EB36 /* News-25.png in Resources */ = {isa = PBXBuildFile; fileRef = AD015B081BFB89A50003EB36 /* News-25.png */; };
-		AD015B0B1BFB8A1D0003EB36 /* Waypoint Map-25.png in Resources */ = {isa = PBXBuildFile; fileRef = AD015B0A1BFB8A1D0003EB36 /* Waypoint Map-25.png */; };
-		AD015B0D1BFB8A300003EB36 /* Calendar-25.png in Resources */ = {isa = PBXBuildFile; fileRef = AD015B0C1BFB8A300003EB36 /* Calendar-25.png */; };
 		AD015B0F1BFB8E0C0003EB36 /* AsyncUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B0E1BFB8E0C0003EB36 /* AsyncUpdate.swift */; };
 		AD015B141BFB907C0003EB36 /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B131BFB907C0003EB36 /* EventsController.swift */; };
 		AD015B181BFB91040003EB36 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B171BFB91040003EB36 /* EventsViewController.swift */; };
@@ -18,6 +15,7 @@
 		AD015B1C1BFB91D40003EB36 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B1B1BFB91D40003EB36 /* NewsViewController.swift */; };
 		AD015B201BFB93530003EB36 /* EventsConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B1F1BFB93530003EB36 /* EventsConnection.swift */; };
 		AD015B221BFB936F0003EB36 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B211BFB936F0003EB36 /* Event.swift */; };
+		AD015B241BFB9E210003EB36 /* CustomEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B231BFB9E210003EB36 /* CustomEventsCell.swift */; };
 		AD25813C1BF5860A00EEAFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */; };
 		AD2581411BF5860A00EEAFE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25813F1BF5860A00EEAFE7 /* Main.storyboard */; };
 		AD2581431BF5860A00EEAFE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2581421BF5860A00EEAFE7 /* Assets.xcassets */; };
@@ -56,9 +54,6 @@
 /* Begin PBXFileReference section */
 		168C3DD418021B01F4AE302F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AD015B061BFB7DB90003EB36 /* nikn_default_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nikn_default_banner.png; sourceTree = "<group>"; };
-		AD015B081BFB89A50003EB36 /* News-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News-25.png"; sourceTree = "<group>"; };
-		AD015B0A1BFB8A1D0003EB36 /* Waypoint Map-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Waypoint Map-25.png"; sourceTree = "<group>"; };
-		AD015B0C1BFB8A300003EB36 /* Calendar-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Calendar-25.png"; sourceTree = "<group>"; };
 		AD015B0E1BFB8E0C0003EB36 /* AsyncUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncUpdate.swift; sourceTree = "<group>"; };
 		AD015B131BFB907C0003EB36 /* EventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
 		AD015B171BFB91040003EB36 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +61,7 @@
 		AD015B1B1BFB91D40003EB36 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		AD015B1F1BFB93530003EB36 /* EventsConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsConnection.swift; sourceTree = "<group>"; };
 		AD015B211BFB936F0003EB36 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AD015B231BFB9E210003EB36 /* CustomEventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEventsCell.swift; sourceTree = "<group>"; };
 		AD2581381BF5860A00EEAFE7 /* Nikin_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nikin_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD2581401BF5860A00EEAFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,9 +124,6 @@
 		AD015B051BFB7D8D0003EB36 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				AD015B0C1BFB8A300003EB36 /* Calendar-25.png */,
-				AD015B0A1BFB8A1D0003EB36 /* Waypoint Map-25.png */,
-				AD015B081BFB89A50003EB36 /* News-25.png */,
 				AD015B061BFB7DB90003EB36 /* nikn_default_banner.png */,
 				AD015B0E1BFB8E0C0003EB36 /* AsyncUpdate.swift */,
 			);
@@ -161,6 +154,7 @@
 				AD25817E1BF58A5C00EEAFE7 /* EventsDetail.swift */,
 				AD015B131BFB907C0003EB36 /* EventsController.swift */,
 				AD015B171BFB91040003EB36 /* EventsViewController.swift */,
+				AD015B231BFB9E210003EB36 /* CustomEventsCell.swift */,
 			);
 			name = Events;
 			sourceTree = "<group>";
@@ -380,9 +374,6 @@
 				AD2581461BF5860A00EEAFE7 /* LaunchScreen.storyboard in Resources */,
 				AD2581831BF592F400EEAFE7 /* CareUnitList.storyboard in Resources */,
 				AD2581431BF5860A00EEAFE7 /* Assets.xcassets in Resources */,
-				AD015B0B1BFB8A1D0003EB36 /* Waypoint Map-25.png in Resources */,
-				AD015B0D1BFB8A300003EB36 /* Calendar-25.png in Resources */,
-				AD015B091BFB89A50003EB36 /* News-25.png in Resources */,
 				AD2581411BF5860A00EEAFE7 /* Main.storyboard in Resources */,
 				AD2581851BF5930C00EEAFE7 /* CareUnitMap.storyboard in Resources */,
 				AD015B071BFB7DB90003EB36 /* nikn_default_banner.png in Resources */,
@@ -459,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD25816F1BF5866E00EEAFE7 /* CareUnit.swift in Sources */,
+				AD015B241BFB9E210003EB36 /* CustomEventsCell.swift in Sources */,
 				AD015B141BFB907C0003EB36 /* EventsController.swift in Sources */,
 				AD015B1C1BFB91D40003EB36 /* NewsViewController.swift in Sources */,
 				AD25813C1BF5860A00EEAFE7 /* AppDelegate.swift in Sources */,

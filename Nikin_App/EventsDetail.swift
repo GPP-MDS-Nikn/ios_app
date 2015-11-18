@@ -10,9 +10,16 @@ import UIKit
 
 class EventsDetail: UIViewController {
 
+    var event: Event!
+    @IBOutlet weak var descriptionEvent: UITextView!
+    @IBOutlet weak var titleEvent: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        descriptionEvent.text = event.descriptionEvent
+        titleEvent.text = event.title
+        
         // Do any additional setup after loading the view.
     }
 

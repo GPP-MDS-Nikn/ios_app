@@ -10,6 +10,7 @@ import UIKit
 
 class CareUnit: NSObject {
     
+    var id: Int!
     var district: String!
     var category: String!
     var institution: String!

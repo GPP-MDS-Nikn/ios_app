@@ -10,6 +10,7 @@ import UIKit
 
 class NewsPost: NSObject {
 
+    var id: Int!
     var title:String!
     var author:String!
     var body:String!
