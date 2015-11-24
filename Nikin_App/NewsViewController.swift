@@ -10,26 +10,36 @@ import UIKit
 
 class NewsViewController: UIViewController, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var dataSource: NewsController!
+    var selectedNews: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.tableView.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        dataSource = NewsController()
+        tableView.dataSource = dataSource
+        dataSource.tableView = self.tableView
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+  
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedNews = indexPath.row
+        self.performSegueWithIdentifier("callNewsDetail", sender: self)
     }
-    */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller = segue.destinationViewController as! NewsDetailTableView
+        let news = dataSource.connect.returnNewsAtIndex(selectedNews)
+        
+        controller.news = news	
+    }
 
 }

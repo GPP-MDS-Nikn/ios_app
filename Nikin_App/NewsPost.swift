@@ -14,5 +14,15 @@ class NewsPost: NSObject {
     var title:String!
     var author:String!
     var body:String!
+    var date:String!
     
+
+    init(newsDictionary: NSDictionary) {
+        id = newsDictionary["id"] as! Int
+        title = newsDictionary["title"] as! String
+        author = newsDictionary["author"] as! String
+        body = newsDictionary["body"] as! String
+        date = newsDictionary["created_at"] as! String
+    }
 }
+

@@ -11,8 +11,6 @@ import Alamofire
 
 class EventsConnection: NSObject {
 
-    let GET_EVENTS = "http://localhost:8080/api/events"
-    
     var eventsJSON: NSArray?
     var asyncObject: AsyncUpdate!
     
@@ -24,7 +22,7 @@ class EventsConnection: NSObject {
     }
     
     func getEvents () {
-        Alamofire.request(.GET, GET_EVENTS)  .responseJSON { response in
+        Alamofire.request(.GET, Constants.GET_EVENTS)  .responseJSON { response in
             //print("Response REQUEST: ", response.request)  // original URL request
             //print("Response RESPONSE: ", response.response) // URL response
             //print("Response DATA: ", response.data)     // server data
@@ -42,8 +40,8 @@ class EventsConnection: NSObject {
         var event: Event?
         
         if eventsJSON != nil {
-            
-            event = Event(dictionary: eventsJSON![index] as! NSDictionary)
+            let reverseArray = eventsJSON?.reverseObjectEnumerator().allObjects
+            event = Event(dictionary: reverseArray![index] as! NSDictionary)
             return event
         }
         

@@ -1,21 +1,17 @@
 //
-//  CustomEventsCell.swift
+//  NewsCustomCelll.swift
 //  Nikin_App
 //
-//  Created by Lucas Freitas de Oliveira on 11/17/15.
+//  Created by Lucas Freitas de Oliveira on 11/18/15.
 //  Copyright © 2015 Lucas Freitas de Oliveira. All rights reserved.
 //
 
 import UIKit
 
-class CustomEventsCell: UITableViewCell {
+class NewsCustomCelll: UITableViewCell {
 
-    @IBOutlet weak var eventCover: UIImageView!
-    @IBOutlet weak var eventTitle: UILabel!
-    @IBOutlet weak var eventDate: UILabel!
-    @IBOutlet weak var eventStartTime: UILabel!
-    @IBOutlet weak var eventEndTime: UILabel!
-    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,5 +24,4 @@ class CustomEventsCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    
 }

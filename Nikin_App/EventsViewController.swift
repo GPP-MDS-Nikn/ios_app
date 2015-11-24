@@ -18,12 +18,16 @@ class EventsViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.delegate = self
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
         dataSource = EventsController()
         tableView.dataSource = dataSource
         dataSource.tableView = self.tableView
-        
-        self.tableView.delegate = self
-        
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -33,7 +37,7 @@ class EventsViewController: UIViewController, UITableViewDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
        
-        let controller = segue.destinationViewController as! EventsDetail
+        let controller = segue.destinationViewController as! EventsTableView
         let event = dataSource.connect.returnEventAtIndex(selectedEvent)
         
         controller.event = event

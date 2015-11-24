@@ -9,30 +9,51 @@
 import UIKit
 import MapKit
 
-class CareUnitMapVC: UIViewController {
+class CareUnitMapVC: UIViewController, AsyncUpdate {
     
     
     @IBOutlet weak var mapView: MKMapView!
+    var connect: CareUnitConnection!
+    let regionRadius: CLLocationDistance = 1000
+    var careUnit: CareUnit!
+    
+    func loadData() {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
+        connect = CareUnitConnection()
+        connect.asyncObject = self
+        connect.getcareUnits()
+        
+        
+        mapView.delegate = self
+        let initialLocation = CLLocation(latitude: -16.019736, longitude: -48.063628)
+        centerMapOnLocation(initialLocation)
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        let artwork = Artwork(title: "King David Kalakaua",
+            locationName: "Waikiki Gateway Park",
+            coordinate: CLLocationCoordinate2D(latitude: -16.019736, longitude: -48.063628))
+        
+        mapView.addAnnotation(artwork)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
     }
-    */
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+            regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
 
+    func initCareUnits() {
+        for var index = 0; index <= connect.countTotalCareUnits(); ++index {
+            var newCareUnit = connect.returncareUnitsAtIndex(index)
+        }
+    }
 }

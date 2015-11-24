@@ -16,6 +16,18 @@
 		AD015B201BFB93530003EB36 /* EventsConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B1F1BFB93530003EB36 /* EventsConnection.swift */; };
 		AD015B221BFB936F0003EB36 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B211BFB936F0003EB36 /* Event.swift */; };
 		AD015B241BFB9E210003EB36 /* CustomEventsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B231BFB9E210003EB36 /* CustomEventsCell.swift */; };
+		AD015B361BFD02450003EB36 /* NewsCustomCelll.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B351BFD02450003EB36 /* NewsCustomCelll.swift */; };
+		AD015B3E1BFEBE540003EB36 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B3D1BFEBE540003EB36 /* Constants.swift */; };
+		AD015B401BFEDB6C0003EB36 /* LauchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B3F1BFEDB6C0003EB36 /* LauchScreenViewController.swift */; };
+		AD015B421BFF593B0003EB36 /* Prefeitura-promove-16-Dias-de-Ativismo-pelo-fim-da-violência-contra-mulher-e1415995786278-735x310.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD015B411BFF593B0003EB36 /* Prefeitura-promove-16-Dias-de-Ativismo-pelo-fim-da-violência-contra-mulher-e1415995786278-735x310.jpg */; };
+		AD015B441BFFABB10003EB36 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B431BFFABB10003EB36 /* TabBarController.swift */; };
+		AD015B461BFFB2C30003EB36 /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B451BFFB2C30003EB36 /* LayoutHelper.swift */; };
+		AD015B481C00EB070003EB36 /* NewsDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B471C00EB070003EB36 /* NewsDetailTableView.swift */; };
+		AD015B521C00FF690003EB36 /* Fabiane-Dutra-Oliveira-presidenta-do-Conselho-Estadual-dos-Direitos-da-Mulher-registrou-a-grande-presença-de-público-na-conferência.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD015B511C00FF690003EB36 /* Fabiane-Dutra-Oliveira-presidenta-do-Conselho-Estadual-dos-Direitos-da-Mulher-registrou-a-grande-presença-de-público-na-conferência.jpg */; };
+		AD015B541C00FFDE0003EB36 /* ana_estela_haddad_com_maes_acolhidas_no_centro_sesame_-_credito_divulgacao_secom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD015B531C00FFDE0003EB36 /* ana_estela_haddad_com_maes_acolhidas_no_centro_sesame_-_credito_divulgacao_secom.jpg */; };
+		AD015B561C01105F0003EB36 /* EventsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B551C01105F0003EB36 /* EventsTableView.swift */; };
+		AD015B581C03419C0003EB36 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B571C03419C0003EB36 /* Artwork.swift */; };
+		AD015B5A1C0345EB0003EB36 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B591C0345EB0003EB36 /* VCMapView.swift */; };
 		AD25813C1BF5860A00EEAFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */; };
 		AD2581411BF5860A00EEAFE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25813F1BF5860A00EEAFE7 /* Main.storyboard */; };
 		AD2581431BF5860A00EEAFE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2581421BF5860A00EEAFE7 /* Assets.xcassets */; };
@@ -27,8 +39,6 @@
 		AD2581711BF586B100EEAFE7 /* CareUnitMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */; };
 		AD25817B1BF587B800EEAFE7 /* NewsPostConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25817A1BF587B800EEAFE7 /* NewsPostConnection.swift */; };
 		AD25817D1BF587C900EEAFE7 /* CareUnitConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25817C1BF587C900EEAFE7 /* CareUnitConnection.swift */; };
-		AD25817F1BF58A5C00EEAFE7 /* EventsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25817E1BF58A5C00EEAFE7 /* EventsDetail.swift */; };
-		AD2581811BF58A8200EEAFE7 /* NewsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2581801BF58A8200EEAFE7 /* NewsDetail.swift */; };
 		AD2581831BF592F400EEAFE7 /* CareUnitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */; };
 		AD2581851BF5930C00EEAFE7 /* CareUnitMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */; };
 		B64613B6125A368310F22C7D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83039A4EF5E0DBD624E68DA /* Pods.framework */; };
@@ -62,6 +72,18 @@
 		AD015B1F1BFB93530003EB36 /* EventsConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsConnection.swift; sourceTree = "<group>"; };
 		AD015B211BFB936F0003EB36 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		AD015B231BFB9E210003EB36 /* CustomEventsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEventsCell.swift; sourceTree = "<group>"; };
+		AD015B351BFD02450003EB36 /* NewsCustomCelll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCustomCelll.swift; sourceTree = "<group>"; };
+		AD015B3D1BFEBE540003EB36 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD015B3F1BFEDB6C0003EB36 /* LauchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LauchScreenViewController.swift; sourceTree = "<group>"; };
+		AD015B411BFF593B0003EB36 /* Prefeitura-promove-16-Dias-de-Ativismo-pelo-fim-da-violência-contra-mulher-e1415995786278-735x310.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Prefeitura-promove-16-Dias-de-Ativismo-pelo-fim-da-violência-contra-mulher-e1415995786278-735x310.jpg"; sourceTree = "<group>"; };
+		AD015B431BFFABB10003EB36 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AD015B451BFFB2C30003EB36 /* LayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
+		AD015B471C00EB070003EB36 /* NewsDetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailTableView.swift; sourceTree = "<group>"; };
+		AD015B511C00FF690003EB36 /* Fabiane-Dutra-Oliveira-presidenta-do-Conselho-Estadual-dos-Direitos-da-Mulher-registrou-a-grande-presença-de-público-na-conferência.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fabiane-Dutra-Oliveira-presidenta-do-Conselho-Estadual-dos-Direitos-da-Mulher-registrou-a-grande-presença-de-público-na-conferência.jpg"; sourceTree = "<group>"; };
+		AD015B531C00FFDE0003EB36 /* ana_estela_haddad_com_maes_acolhidas_no_centro_sesame_-_credito_divulgacao_secom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ana_estela_haddad_com_maes_acolhidas_no_centro_sesame_-_credito_divulgacao_secom.jpg"; sourceTree = "<group>"; };
+		AD015B551C01105F0003EB36 /* EventsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableView.swift; sourceTree = "<group>"; };
+		AD015B571C03419C0003EB36 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		AD015B591C0345EB0003EB36 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		AD2581381BF5860A00EEAFE7 /* Nikin_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nikin_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD2581401BF5860A00EEAFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,8 +101,6 @@
 		AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareUnitMapVC.swift; sourceTree = "<group>"; };
 		AD25817A1BF587B800EEAFE7 /* NewsPostConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostConnection.swift; sourceTree = "<group>"; };
 		AD25817C1BF587C900EEAFE7 /* CareUnitConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareUnitConnection.swift; sourceTree = "<group>"; };
-		AD25817E1BF58A5C00EEAFE7 /* EventsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetail.swift; sourceTree = "<group>"; };
-		AD2581801BF58A8200EEAFE7 /* NewsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetail.swift; sourceTree = "<group>"; };
 		AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareUnitList.storyboard; sourceTree = "<group>"; };
 		AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareUnitMap.storyboard; sourceTree = "<group>"; };
 		AE21A2004621E98CC214BCD5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,8 +144,14 @@
 		AD015B051BFB7D8D0003EB36 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AD015B531C00FFDE0003EB36 /* ana_estela_haddad_com_maes_acolhidas_no_centro_sesame_-_credito_divulgacao_secom.jpg */,
+				AD015B511C00FF690003EB36 /* Fabiane-Dutra-Oliveira-presidenta-do-Conselho-Estadual-dos-Direitos-da-Mulher-registrou-a-grande-presença-de-público-na-conferência.jpg */,
+				AD015B411BFF593B0003EB36 /* Prefeitura-promove-16-Dias-de-Ativismo-pelo-fim-da-violência-contra-mulher-e1415995786278-735x310.jpg */,
 				AD015B061BFB7DB90003EB36 /* nikn_default_banner.png */,
 				AD015B0E1BFB8E0C0003EB36 /* AsyncUpdate.swift */,
+				AD015B3D1BFEBE540003EB36 /* Constants.swift */,
+				AD015B431BFFABB10003EB36 /* TabBarController.swift */,
+				AD015B451BFFB2C30003EB36 /* LayoutHelper.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -134,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */,
+				AD015B591C0345EB0003EB36 /* VCMapView.swift */,
 			);
 			name = CareUnit;
 			sourceTree = "<group>";
@@ -141,9 +168,10 @@
 		AD015B111BFB90020003EB36 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				AD2581801BF58A8200EEAFE7 /* NewsDetail.swift */,
+				AD015B471C00EB070003EB36 /* NewsDetailTableView.swift */,
 				AD015B191BFB91AF0003EB36 /* NewsController.swift */,
 				AD015B1B1BFB91D40003EB36 /* NewsViewController.swift */,
+				AD015B351BFD02450003EB36 /* NewsCustomCelll.swift */,
 			);
 			name = News;
 			sourceTree = "<group>";
@@ -151,10 +179,10 @@
 		AD015B121BFB900B0003EB36 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				AD25817E1BF58A5C00EEAFE7 /* EventsDetail.swift */,
 				AD015B131BFB907C0003EB36 /* EventsController.swift */,
 				AD015B171BFB91040003EB36 /* EventsViewController.swift */,
 				AD015B231BFB9E210003EB36 /* CustomEventsCell.swift */,
+				AD015B551C01105F0003EB36 /* EventsTableView.swift */,
 			);
 			name = Events;
 			sourceTree = "<group>";
@@ -221,6 +249,7 @@
 				AD25816C1BF5866100EEAFE7 /* NewsPost.swift */,
 				AD25816E1BF5866E00EEAFE7 /* CareUnit.swift */,
 				AD015B211BFB936F0003EB36 /* Event.swift */,
+				AD015B571C03419C0003EB36 /* Artwork.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -231,6 +260,7 @@
 				AD25813F1BF5860A00EEAFE7 /* Main.storyboard */,
 				AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */,
 				AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */,
+				AD015B3F1BFEDB6C0003EB36 /* LauchScreenViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -371,12 +401,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD015B421BFF593B0003EB36 /* Prefeitura-promove-16-Dias-de-Ativismo-pelo-fim-da-violência-contra-mulher-e1415995786278-735x310.jpg in Resources */,
+				AD015B521C00FF690003EB36 /* Fabiane-Dutra-Oliveira-presidenta-do-Conselho-Estadual-dos-Direitos-da-Mulher-registrou-a-grande-presença-de-público-na-conferência.jpg in Resources */,
 				AD2581461BF5860A00EEAFE7 /* LaunchScreen.storyboard in Resources */,
 				AD2581831BF592F400EEAFE7 /* CareUnitList.storyboard in Resources */,
 				AD2581431BF5860A00EEAFE7 /* Assets.xcassets in Resources */,
 				AD2581411BF5860A00EEAFE7 /* Main.storyboard in Resources */,
 				AD2581851BF5930C00EEAFE7 /* CareUnitMap.storyboard in Resources */,
 				AD015B071BFB7DB90003EB36 /* nikn_default_banner.png in Resources */,
+				AD015B541C00FFDE0003EB36 /* ana_estela_haddad_com_maes_acolhidas_no_centro_sesame_-_credito_divulgacao_secom.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,17 +487,24 @@
 				AD015B141BFB907C0003EB36 /* EventsController.swift in Sources */,
 				AD015B1C1BFB91D40003EB36 /* NewsViewController.swift in Sources */,
 				AD25813C1BF5860A00EEAFE7 /* AppDelegate.swift in Sources */,
+				AD015B481C00EB070003EB36 /* NewsDetailTableView.swift in Sources */,
 				AD015B221BFB936F0003EB36 /* Event.swift in Sources */,
-				AD25817F1BF58A5C00EEAFE7 /* EventsDetail.swift in Sources */,
+				AD015B5A1C0345EB0003EB36 /* VCMapView.swift in Sources */,
+				AD015B401BFEDB6C0003EB36 /* LauchScreenViewController.swift in Sources */,
+				AD015B561C01105F0003EB36 /* EventsTableView.swift in Sources */,
+				AD015B581C03419C0003EB36 /* Artwork.swift in Sources */,
+				AD015B361BFD02450003EB36 /* NewsCustomCelll.swift in Sources */,
 				AD015B201BFB93530003EB36 /* EventsConnection.swift in Sources */,
 				AD25816D1BF5866100EEAFE7 /* NewsPost.swift in Sources */,
 				AD25817D1BF587C900EEAFE7 /* CareUnitConnection.swift in Sources */,
 				AD25817B1BF587B800EEAFE7 /* NewsPostConnection.swift in Sources */,
+				AD015B461BFFB2C30003EB36 /* LayoutHelper.swift in Sources */,
+				AD015B441BFFABB10003EB36 /* TabBarController.swift in Sources */,
 				AD015B0F1BFB8E0C0003EB36 /* AsyncUpdate.swift in Sources */,
 				AD015B1A1BFB91AF0003EB36 /* NewsController.swift in Sources */,
 				AD015B181BFB91040003EB36 /* EventsViewController.swift in Sources */,
-				AD2581811BF58A8200EEAFE7 /* NewsDetail.swift in Sources */,
 				AD2581711BF586B100EEAFE7 /* CareUnitMapVC.swift in Sources */,
+				AD015B3E1BFEBE540003EB36 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

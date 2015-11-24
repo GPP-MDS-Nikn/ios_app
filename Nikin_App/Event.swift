@@ -14,15 +14,32 @@ class Event: NSObject {
     var title:String!
     var local:String!
     var descriptionEvent:String!
-    var startTime: NSDate?
-    var endTime: NSDate?
+    var startTime: String!
+    var endTime: String!
 
     
     init(dictionary: NSDictionary) {
+        super.init()
         id = dictionary["id"] as! Int
         title = dictionary["title"] as! String
         descriptionEvent = dictionary["description"] as! String
         local = dictionary["local"] as! String
+        endTime = dictionary["end_time"] as! String
+        startTime = dateFromString(dictionary["start_time"] as! String)
 
     }
+    
+    
+    func dateFromString(date: String) -> String {
+        
+        let dateFormatter: NSDateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        let dateDate = dateFormatter.dateFromString(date)!
+        
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        return dateFormatter.stringFromDate(dateDate)
+    }
+
+    
 }

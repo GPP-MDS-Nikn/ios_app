@@ -14,9 +14,7 @@ class EventsController: NSObject, UITableViewDataSource, AsyncUpdate {
     var tableView: UITableView?
     
     func loadData() {
-        
         tableView?.reloadData()
-        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,12 +28,11 @@ class EventsController: NSObject, UITableViewDataSource, AsyncUpdate {
         
         if event != nil {
             cell.eventTitle.text = event?.title
-            
+            cell.eventDate.text = event?.startTime
         }
         
         return cell
     }
-    
 
     override init() {
         super.init()
