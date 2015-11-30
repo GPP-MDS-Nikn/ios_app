@@ -27,32 +27,8 @@ class NewsDetailTableView: UITableViewController {
         titleLabel.text = news.title
         authorLabel.text = news.author
         descriptionTextView.text = news.body
-        dateFromString(news.date)
-        dateLabel.text = dateFromString(news.date)
+        dateLabel.text = news.date
 
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        
-    }
-    
-    func dateFromString(date: String) -> String {
-        
-        let dateFormatter: NSDateFormatter = NSDateFormatter()
-        
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        let dateDate = dateFormatter.dateFromString(date)!
-        
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        return dateFormatter.stringFromDate(dateDate)
-    }
-
-    func convertNSDateToString(date: NSDate) -> String {
-        
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        
-        return dateFormatter.stringFromDate(date)
     }
     
     // MARK: - Table view data source

@@ -22,7 +22,7 @@ class NewsPost: NSObject {
         title = newsDictionary["title"] as! String
         author = newsDictionary["author"] as! String
         body = newsDictionary["body"] as! String
-        date = newsDictionary["created_at"] as! String
+        date = Treatment.dateFromString(newsDictionary["created_at"] as! String)
     }
 }
 

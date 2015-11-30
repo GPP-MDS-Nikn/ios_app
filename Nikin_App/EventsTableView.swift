@@ -14,6 +14,7 @@ class EventsTableView: UITableViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var coverImage: UIImageView!
     
     var event = Event!()
  
@@ -22,20 +23,12 @@ class EventsTableView: UITableViewController {
 
         titleLabel.text = event.title
         descriptionTextView.text = event.descriptionEvent
-        dateLabel.text = event.startTime
+        dateLabel.text = event.date
+        timeLabel.text = event.startTime
+        coverImage.image = event.coverImage
+        
         
     }
-    
-//    func dateFromString(date: String) -> String {
-//        
-//        let dateFormatter: NSDateFormatter = NSDateFormatter()
-//        
-//        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-//        let dateDate = dateFormatter.dateFromString(date)!
-//        
-//        dateFormatter.dateFormat = "dd/MM/yyyy"
-//        return dateFormatter.stringFromDate(dateDate)
-//    }
     
     // MARK: - Table view data source
 

@@ -9,15 +9,44 @@
 import UIKit
 import MapKit
 
-class CareUnitMapVC: UIViewController, AsyncUpdate {
+class CareUnitMapVC: UIViewController, AsyncUpdate, CLLocationManagerDelegate {
     
     
+    @IBOutlet weak var userLocationButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
+    
     var connect: CareUnitConnection!
     let regionRadius: CLLocationDistance = 1000
     var careUnit: CareUnit!
+    var artworks: [Artwork]?
+    
+    
+    lazy var locationManager: CLLocationManager = {
+        var manager = CLLocationManager()
+        manager.delegate = self
+        return manager
+    }()
+    
+    func checkLocationAuthorizationStatus() {
+        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
+            mapView.showsUserLocation = true
+            locationManager.startUpdatingLocation()
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
     
     func loadData() {
+        
+        for index in 0...connect.countTotalCareUnits()-1 {
+            let careUnit = connect.returncareUnitsAtIndex(index)
+            let artwork = Artwork(title: (careUnit?.name)!, locationName: (careUnit?.institution)!, coordinate: (careUnit?.coordinate)!)
+            
+            artwork.tag = index
+            mapView.addAnnotation(artwork)
+            
+        }
+        
         
     }
     
@@ -27,33 +56,61 @@ class CareUnitMapVC: UIViewController, AsyncUpdate {
         connect = CareUnitConnection()
         connect.asyncObject = self
         connect.getcareUnits()
-        
+
+        checkLocationAuthorizationStatus()
         
         mapView.delegate = self
-        let initialLocation = CLLocation(latitude: -16.019736, longitude: -48.063628)
-        centerMapOnLocation(initialLocation)
-        // Do any additional setup after loading the view.
+        mapView.showsUserLocation = true
+        userLocationButton.layer.cornerRadius = 5
+        userLocationButton.layer.borderWidth = 1
+        userLocationButton.layer.borderColor = UIColor.blackColor().CGColor
         
-        let artwork = Artwork(title: "King David Kalakaua",
-            locationName: "Waikiki Gateway Park",
-            coordinate: CLLocationCoordinate2D(latitude: -16.019736, longitude: -48.063628))
+        //let initialLocation = CLLocation(latitude: -15.798044, longitude: -47.884517)
+        //centerMapOnLocation(initialLocation)
         
-        mapView.addAnnotation(artwork)
+    }
+    
+//    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        if let location = locations.last {
+//            //this is the place where you get the new location
+//            print("\(location.coordinate.latitude)")
+//            
+//            print("\(location.coordinate.longitude)")
+//        }
+//    }
+    
+    @IBAction func goToUserLocation(sender: AnyObject) {
+        zoomIn()
+    }
+    func zoomIn () {
+        let userLocation = mapView.userLocation
+        
+        let region = MKCoordinateRegionMakeWithDistance(
+            (userLocation.location?.coordinate)!, 5000, 5000)
+        
+        mapView.setRegion(region, animated: true)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(4), target: self, selector: "zoomIn", userInfo: nil, repeats: false)
+        //loadData()
     }
     
     override func viewDidAppear(animated: Bool) {
+       
         super.viewDidAppear(animated)
+        
+        
+    }
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        mapView.centerCoordinate = userLocation.location!.coordinate
     }
     
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-            regionRadius * 2.0, regionRadius * 2.0)
+            regionRadius * 150.0, regionRadius * 150.0)
         mapView.setRegion(coordinateRegion, animated: true)
     }
 
-    func initCareUnits() {
-        for var index = 0; index <= connect.countTotalCareUnits(); ++index {
-            var newCareUnit = connect.returncareUnitsAtIndex(index)
-        }
-    }
 }

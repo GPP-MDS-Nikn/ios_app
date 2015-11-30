@@ -40,10 +40,11 @@ class CareUnit: NSObject {
         phone = careUnitDictionary["phone"] as! String
         email = careUnitDictionary["email"] as! String
         site = careUnitDictionary["site"] as! String
-        coordinate = CLLocationCoordinate2D(latitude: (latitude as NSString).doubleValue, longitude: (longitude as NSString).doubleValue)
-        
         latitude = careUnitDictionary["latitude"] as! String
         longitude = careUnitDictionary["longitude"] as! String
+        coordinate = CLLocationCoordinate2D(latitude: (latitude as NSString).doubleValue, longitude: (longitude as NSString).doubleValue)
+        
+        
     }
     
     override init() {

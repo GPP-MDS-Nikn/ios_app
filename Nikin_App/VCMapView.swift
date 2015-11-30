@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import AddressBook
 
 extension CareUnitMapVC: MKMapViewDelegate {
     
@@ -20,10 +21,13 @@ extension CareUnitMapVC: MKMapViewDelegate {
                 as? MKPinAnnotationView { // 2
                     dequeuedView.annotation = annotation
                     view = dequeuedView
+                    
             } else {
                 // 3
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
+                view.animatesDrop = true
+                view.image = UIImage(named: "mapMarker")
                 view.calloutOffset = CGPoint(x: -5, y: 5)
                 view.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure) as UIView
             }
@@ -31,4 +35,33 @@ extension CareUnitMapVC: MKMapViewDelegate {
         }
         return nil
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "showDetail" {
+            let destinationViewController = segue.destinationViewController as! CareUnitDetailsTVC
+            destinationViewController.careUnit = self.connect.returncareUnitsAtIndex(((sender as! MKAnnotationView).annotation as! Artwork).tag)
+            print("TAG TAG: ",sender?.tag)
+        }
+    }
+    
+//    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
+//        calloutAccessoryControlTapped control: UIControl) {
+//            
+//            
+//            
+////            let location = view.annotation as! Artwork
+////            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+////            location.mapItem().openInMapsWithLaunchOptions(launchOptions)
+//            print("CLICOU")
+//    }
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+  //      (view.annotation as! Artwork).tag
+        
+        self.performSegueWithIdentifier("showDetail", sender: view)
+    }
+    
+    
+    
 }

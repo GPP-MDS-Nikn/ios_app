@@ -28,12 +28,14 @@ class EventsController: NSObject, UITableViewDataSource, AsyncUpdate {
         
         if event != nil {
             cell.eventTitle.text = event?.title
-            cell.eventDate.text = event?.startTime
+            cell.eventDate.text = event?.date
+            cell.eventCover.image = event?.coverImage
+           
         }
         
         return cell
     }
-
+    
     override init() {
         super.init()
         

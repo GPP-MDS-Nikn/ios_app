@@ -28,6 +28,8 @@
 		AD015B561C01105F0003EB36 /* EventsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B551C01105F0003EB36 /* EventsTableView.swift */; };
 		AD015B581C03419C0003EB36 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B571C03419C0003EB36 /* Artwork.swift */; };
 		AD015B5A1C0345EB0003EB36 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD015B591C0345EB0003EB36 /* VCMapView.swift */; };
+		AD08C3121C0BC0E900A90A76 /* CareUnitDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD08C3111C0BC0E900A90A76 /* CareUnitDetail.storyboard */; };
+		AD08C3161C0C076100A90A76 /* CareUnitDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD08C3151C0C076100A90A76 /* CareUnitDetailsTVC.swift */; };
 		AD25813C1BF5860A00EEAFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */; };
 		AD2581411BF5860A00EEAFE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD25813F1BF5860A00EEAFE7 /* Main.storyboard */; };
 		AD2581431BF5860A00EEAFE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2581421BF5860A00EEAFE7 /* Assets.xcassets */; };
@@ -39,8 +41,8 @@
 		AD2581711BF586B100EEAFE7 /* CareUnitMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */; };
 		AD25817B1BF587B800EEAFE7 /* NewsPostConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25817A1BF587B800EEAFE7 /* NewsPostConnection.swift */; };
 		AD25817D1BF587C900EEAFE7 /* CareUnitConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD25817C1BF587C900EEAFE7 /* CareUnitConnection.swift */; };
-		AD2581831BF592F400EEAFE7 /* CareUnitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */; };
-		AD2581851BF5930C00EEAFE7 /* CareUnitMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */; };
+		AD7854471C069013002DE3E9 /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7854461C069013002DE3E9 /* Treatment.swift */; };
+		AD7854491C06F20C002DE3E9 /* d7c66fa1338fea52fcee77f8835b1bff.png in Resources */ = {isa = PBXBuildFile; fileRef = AD7854481C06F20C002DE3E9 /* d7c66fa1338fea52fcee77f8835b1bff.png */; };
 		B64613B6125A368310F22C7D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83039A4EF5E0DBD624E68DA /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		AD015B551C01105F0003EB36 /* EventsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableView.swift; sourceTree = "<group>"; };
 		AD015B571C03419C0003EB36 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		AD015B591C0345EB0003EB36 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		AD08C3111C0BC0E900A90A76 /* CareUnitDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareUnitDetail.storyboard; sourceTree = "<group>"; };
+		AD08C3151C0C076100A90A76 /* CareUnitDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareUnitDetailsTVC.swift; sourceTree = "<group>"; };
 		AD2581381BF5860A00EEAFE7 /* Nikin_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nikin_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD25813B1BF5860A00EEAFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD2581401BF5860A00EEAFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,8 +105,8 @@
 		AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareUnitMapVC.swift; sourceTree = "<group>"; };
 		AD25817A1BF587B800EEAFE7 /* NewsPostConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsPostConnection.swift; sourceTree = "<group>"; };
 		AD25817C1BF587C900EEAFE7 /* CareUnitConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CareUnitConnection.swift; sourceTree = "<group>"; };
-		AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareUnitList.storyboard; sourceTree = "<group>"; };
-		AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CareUnitMap.storyboard; sourceTree = "<group>"; };
+		AD7854461C069013002DE3E9 /* Treatment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
+		AD7854481C06F20C002DE3E9 /* d7c66fa1338fea52fcee77f8835b1bff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d7c66fa1338fea52fcee77f8835b1bff.png; sourceTree = "<group>"; };
 		AE21A2004621E98CC214BCD5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E83039A4EF5E0DBD624E68DA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -144,6 +148,7 @@
 		AD015B051BFB7D8D0003EB36 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				AD7854481C06F20C002DE3E9 /* d7c66fa1338fea52fcee77f8835b1bff.png */,
 				AD015B531C00FFDE0003EB36 /* ana_estela_haddad_com_maes_acolhidas_no_centro_sesame_-_credito_divulgacao_secom.jpg */,
 				AD015B511C00FF690003EB36 /* Fabiane-Dutra-Oliveira-presidenta-do-Conselho-Estadual-dos-Direitos-da-Mulher-registrou-a-grande-presença-de-público-na-conferência.jpg */,
 				AD015B411BFF593B0003EB36 /* Prefeitura-promove-16-Dias-de-Ativismo-pelo-fim-da-violência-contra-mulher-e1415995786278-735x310.jpg */,
@@ -161,6 +166,8 @@
 			children = (
 				AD2581701BF586B100EEAFE7 /* CareUnitMapVC.swift */,
 				AD015B591C0345EB0003EB36 /* VCMapView.swift */,
+				AD015B571C03419C0003EB36 /* Artwork.swift */,
+				AD08C3151C0C076100A90A76 /* CareUnitDetailsTVC.swift */,
 			);
 			name = CareUnit;
 			sourceTree = "<group>";
@@ -212,6 +219,7 @@
 		AD25813A1BF5860A00EEAFE7 /* Nikin_App */ = {
 			isa = PBXGroup;
 			children = (
+				AD7854451C068FC4002DE3E9 /* Helper */,
 				AD25816B1BF5863A00EEAFE7 /* Controller */,
 				AD2581691BF5862900EEAFE7 /* Model */,
 				AD015B051BFB7D8D0003EB36 /* Source */,
@@ -249,7 +257,6 @@
 				AD25816C1BF5866100EEAFE7 /* NewsPost.swift */,
 				AD25816E1BF5866E00EEAFE7 /* CareUnit.swift */,
 				AD015B211BFB936F0003EB36 /* Event.swift */,
-				AD015B571C03419C0003EB36 /* Artwork.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -258,8 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				AD25813F1BF5860A00EEAFE7 /* Main.storyboard */,
-				AD2581821BF592F400EEAFE7 /* CareUnitList.storyboard */,
-				AD2581841BF5930C00EEAFE7 /* CareUnitMap.storyboard */,
+				AD08C3111C0BC0E900A90A76 /* CareUnitDetail.storyboard */,
 				AD015B3F1BFEDB6C0003EB36 /* LauchScreenViewController.swift */,
 			);
 			name = View;
@@ -283,6 +289,14 @@
 				AD015B1F1BFB93530003EB36 /* EventsConnection.swift */,
 			);
 			name = Connections;
+			sourceTree = "<group>";
+		};
+		AD7854451C068FC4002DE3E9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AD7854461C069013002DE3E9 /* Treatment.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		C4BA72B93502613430650969 /* Pods */ = {
@@ -404,10 +418,10 @@
 				AD015B421BFF593B0003EB36 /* Prefeitura-promove-16-Dias-de-Ativismo-pelo-fim-da-violência-contra-mulher-e1415995786278-735x310.jpg in Resources */,
 				AD015B521C00FF690003EB36 /* Fabiane-Dutra-Oliveira-presidenta-do-Conselho-Estadual-dos-Direitos-da-Mulher-registrou-a-grande-presença-de-público-na-conferência.jpg in Resources */,
 				AD2581461BF5860A00EEAFE7 /* LaunchScreen.storyboard in Resources */,
-				AD2581831BF592F400EEAFE7 /* CareUnitList.storyboard in Resources */,
+				AD7854491C06F20C002DE3E9 /* d7c66fa1338fea52fcee77f8835b1bff.png in Resources */,
 				AD2581431BF5860A00EEAFE7 /* Assets.xcassets in Resources */,
 				AD2581411BF5860A00EEAFE7 /* Main.storyboard in Resources */,
-				AD2581851BF5930C00EEAFE7 /* CareUnitMap.storyboard in Resources */,
+				AD08C3121C0BC0E900A90A76 /* CareUnitDetail.storyboard in Resources */,
 				AD015B071BFB7DB90003EB36 /* nikn_default_banner.png in Resources */,
 				AD015B541C00FFDE0003EB36 /* ana_estela_haddad_com_maes_acolhidas_no_centro_sesame_-_credito_divulgacao_secom.jpg in Resources */,
 			);
@@ -496,12 +510,14 @@
 				AD015B361BFD02450003EB36 /* NewsCustomCelll.swift in Sources */,
 				AD015B201BFB93530003EB36 /* EventsConnection.swift in Sources */,
 				AD25816D1BF5866100EEAFE7 /* NewsPost.swift in Sources */,
+				AD7854471C069013002DE3E9 /* Treatment.swift in Sources */,
 				AD25817D1BF587C900EEAFE7 /* CareUnitConnection.swift in Sources */,
 				AD25817B1BF587B800EEAFE7 /* NewsPostConnection.swift in Sources */,
 				AD015B461BFFB2C30003EB36 /* LayoutHelper.swift in Sources */,
 				AD015B441BFFABB10003EB36 /* TabBarController.swift in Sources */,
 				AD015B0F1BFB8E0C0003EB36 /* AsyncUpdate.swift in Sources */,
 				AD015B1A1BFB91AF0003EB36 /* NewsController.swift in Sources */,
+				AD08C3161C0C076100A90A76 /* CareUnitDetailsTVC.swift in Sources */,
 				AD015B181BFB91040003EB36 /* EventsViewController.swift in Sources */,
 				AD2581711BF586B100EEAFE7 /* CareUnitMapVC.swift in Sources */,
 				AD015B3E1BFEBE540003EB36 /* Constants.swift in Sources */,

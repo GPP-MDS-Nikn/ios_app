@@ -14,32 +14,28 @@ class Event: NSObject {
     var title:String!
     var local:String!
     var descriptionEvent:String!
+    var date:String!
     var startTime: String!
     var endTime: String!
+    var coverImageURL: String?
+    var coverImage: UIImage?
 
-    
     init(dictionary: NSDictionary) {
         super.init()
         id = dictionary["id"] as! Int
         title = dictionary["title"] as! String
         descriptionEvent = dictionary["description"] as! String
         local = dictionary["local"] as! String
-        endTime = dictionary["end_time"] as! String
-        startTime = dateFromString(dictionary["start_time"] as! String)
-
+        date = Treatment.dateFromString(dictionary["start_time"] as! String)
+        endTime = Treatment.timeFromString(dictionary["end_time"] as! String)
+        startTime = Treatment.timeFromString(dictionary["start_time"] as! String)
+        coverImageURL = dictionary["image_file_file_name"] as? String
+        if coverImageURL != nil {
+            coverImage = Treatment.getImageFromURL(coverImageURL!, id: self.id)
+        } else {
+            coverImage = UIImage(named: "d7c66fa1338fea52fcee77f8835b1bff.png")
+        }
+        
     }
-    
-    
-    func dateFromString(date: String) -> String {
-        
-        let dateFormatter: NSDateFormatter = NSDateFormatter()
-        
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        let dateDate = dateFormatter.dateFromString(date)!
-        
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-        return dateFormatter.stringFromDate(dateDate)
-    }
-
     
 }
