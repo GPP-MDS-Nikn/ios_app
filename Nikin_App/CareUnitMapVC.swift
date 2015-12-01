@@ -19,7 +19,7 @@ class CareUnitMapVC: UIViewController, AsyncUpdate, CLLocationManagerDelegate {
     let regionRadius: CLLocationDistance = 1000
     var careUnit: CareUnit!
     var artworks: [Artwork]?
-    
+    var userLocationVar: CLLocation!
     
     lazy var locationManager: CLLocationManager = {
         var manager = CLLocationManager()
@@ -37,17 +37,32 @@ class CareUnitMapVC: UIViewController, AsyncUpdate, CLLocationManagerDelegate {
     }
     
     func loadData() {
-        
-        for index in 0...connect.countTotalCareUnits()-1 {
-            let careUnit = connect.returncareUnitsAtIndex(index)
+
+        for var i = 0; i < connect.countTotalCareUnits(); ++i{
+            let careUnit = connect.returncareUnitsAtIndex(i)
             let artwork = Artwork(title: (careUnit?.name)!, locationName: (careUnit?.institution)!, coordinate: (careUnit?.coordinate)!)
             
-            artwork.tag = index
+            artwork.tag = i
             mapView.addAnnotation(artwork)
-            
         }
+    
+        
+//        for i in 0...connect.countTotalCareUnits()-1 {
+//            
+//        }
         
         
+    }
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        mapView.userLocation
+        
+        let region = MKCoordinateRegionMakeWithDistance((userLocation.location?.coordinate)!, 5000, 5000)
+        
+        userLocationVar = mapView.userLocation.location
+        
+        mapView.setRegion(region, animated: true)
+        //mapView.centerCoordinate = userLocation.location!.coordinate
     }
     
     override func viewDidLoad() {
@@ -65,19 +80,7 @@ class CareUnitMapVC: UIViewController, AsyncUpdate, CLLocationManagerDelegate {
         userLocationButton.layer.borderWidth = 1
         userLocationButton.layer.borderColor = UIColor.blackColor().CGColor
         
-        //let initialLocation = CLLocation(latitude: -15.798044, longitude: -47.884517)
-        //centerMapOnLocation(initialLocation)
-        
     }
-    
-//    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        if let location = locations.last {
-//            //this is the place where you get the new location
-//            print("\(location.coordinate.latitude)")
-//            
-//            print("\(location.coordinate.longitude)")
-//        }
-//    }
     
     @IBAction func goToUserLocation(sender: AnyObject) {
         zoomIn()
@@ -88,23 +91,15 @@ class CareUnitMapVC: UIViewController, AsyncUpdate, CLLocationManagerDelegate {
         let region = MKCoordinateRegionMakeWithDistance(
             (userLocation.location?.coordinate)!, 5000, 5000)
         
+        userLocationVar = mapView.userLocation.location
+        
         mapView.setRegion(region, animated: true)
     }
     
-    override func viewWillAppear(animated: Bool) {
-        NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(4), target: self, selector: "zoomIn", userInfo: nil, repeats: false)
-        //loadData()
-    }
-    
     override func viewDidAppear(animated: Bool) {
-       
         super.viewDidAppear(animated)
+        loadData()
         
-        
-    }
-    
-    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
-        mapView.centerCoordinate = userLocation.location!.coordinate
     }
     
     func centerMapOnLocation(location: CLLocation) {

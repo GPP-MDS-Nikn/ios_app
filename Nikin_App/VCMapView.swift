@@ -41,27 +41,15 @@ extension CareUnitMapVC: MKMapViewDelegate {
         if segue.identifier == "showDetail" {
             let destinationViewController = segue.destinationViewController as! CareUnitDetailsTVC
             destinationViewController.careUnit = self.connect.returncareUnitsAtIndex(((sender as! MKAnnotationView).annotation as! Artwork).tag)
-            print("TAG TAG: ",sender?.tag)
         }
     }
     
-//    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
-//        calloutAccessoryControlTapped control: UIControl) {
-//            
-//            
-//            
-////            let location = view.annotation as! Artwork
-////            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
-////            location.mapItem().openInMapsWithLaunchOptions(launchOptions)
-//            print("CLICOU")
-//    }
-    
-    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
-  //      (view.annotation as! Artwork).tag
-        
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
+        calloutAccessoryControlTapped control: UIControl) {
+            
         self.performSegueWithIdentifier("showDetail", sender: view)
+
     }
-    
-    
+
     
 }

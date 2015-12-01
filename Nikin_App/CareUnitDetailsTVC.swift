@@ -7,24 +7,28 @@
 //
 
 import UIKit
+import Contacts
 import MapKit
 
-class CareUnitDetailsTVC: UITableViewController, MKMapViewDelegate {
+class CareUnitDetailsTVC: UITableViewController, MKMapViewDelegate, CLLocationManagerDelegate, TTTAttributedLabelDelegate {
     
+    @IBOutlet weak var emailButton: UIButton!
+    @IBOutlet weak var siteButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var directionsLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var districtLabel: UILabel!
     @IBOutlet weak var zipCodeLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var siteLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var descriptionText: UITextView!
     
     var careUnit: CareUnit!
-    let regionRadius: CLLocationDistance = 1000
+    var mapVC: CareUnitMapVC!
+    var userLocationVar: CLLocation?
+    let regionRadius: CLLocationDistance = 10
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +39,26 @@ class CareUnitDetailsTVC: UITableViewController, MKMapViewDelegate {
         districtLabel.text = careUnit.district
         zipCodeLabel.text = careUnit.zipCode
         descriptionText.text = careUnit.descriptionCareUnit
-        emailLabel.text = careUnit.email
-        siteLabel.text = careUnit.site
+        emailButton.setTitle(careUnit.email, forState: .Normal)
+        siteButton.setTitle(careUnit.site, forState: .Normal)
         
         mapView.delegate = self
+        mapView.showsUserLocation = true
+        
         
         let initialLocation = CLLocation(latitude: careUnit.coordinate.latitude, longitude: careUnit.coordinate.longitude)
+        print("LATITUDE: ", careUnit.coordinate.latitude)
+        print("LONGITUDE: ", careUnit.coordinate.longitude)
         centerMapOnLocation(initialLocation)
         
+        let artwork = Artwork(title: careUnit.name, locationName: careUnit.institution, coordinate: careUnit.coordinate)
+        mapView.addAnnotation(artwork)
+        
+        //calculateDistance()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+     //    NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(3), target: self, selector: "calculateDistance", userInfo: nil, repeats: false)
     }
 
     func centerMapOnLocation(location: CLLocation) {
@@ -53,6 +69,34 @@ class CareUnitDetailsTVC: UITableViewController, MKMapViewDelegate {
     
     @IBAction func directionsButton(sender: AnyObject) {
         
+//        let placemark = MKPlacemark(coordinate: careUnit.coordinate, addressDictionary: nil)
+//        var mapItem = MKMapItem(placemark: placemark)
+        
+        //let location = CLLocation(latitude: careUnit.coordinate.latitude, longitude: careUnit.coordinate.longitude)
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        mapItem().openInMapsWithLaunchOptions(launchOptions)
+        
+    }
+    
+    func mapItem() -> MKMapItem {
+        let addressDictionary = [String(CNPostalAddressStreetKey): careUnit.institution]
+        let placemark = MKPlacemark(coordinate: careUnit.coordinate, addressDictionary: addressDictionary)
+        
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = title
+        
+        return mapItem
+    }
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        print(mapView.userLocation.coordinate.latitude)
+        print(mapView.userLocation.coordinate.longitude)
+        
+        let careUnitLocation = CLLocation(latitude: careUnit.coordinate.latitude, longitude: careUnit.coordinate.longitude)
+        let distanceFromUser = careUnitLocation.distanceFromLocation(userLocation.location!)/1000
+        let string:String = String(format: "%.2f", distanceFromUser)
+        
+        distanceLabel.text = string + " Km"
     }
     
     override func didReceiveMemoryWarning() {
@@ -82,6 +126,18 @@ class CareUnitDetailsTVC: UITableViewController, MKMapViewDelegate {
         return 0
     }
 
+    @IBAction func openSite(sender: AnyObject) {
+        
+        var url : NSURL;
+        url = NSURL(string:careUnit.site)!;
+        
+        UIApplication.sharedApplication().openURL(url)
+        
+    }
+    
+    @IBAction func sendEmail(sender: AnyObject) {
+    }
+    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)

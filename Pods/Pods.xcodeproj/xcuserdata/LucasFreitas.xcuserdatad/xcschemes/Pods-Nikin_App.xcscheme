@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '43343B62D14FFE0C73A73188'
+               BlueprintIdentifier = '2CDF4778827B85E7132D42D2'
                BlueprintName = 'Pods-Nikin_App'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Nikin_App.framework'>
